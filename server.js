@@ -36,7 +36,7 @@ setInterval(async function () {
         }).then((response) => {
             console.log(`${server.name} ONLINE!`)
         }).catch(() => {            
-             client.sms.enviar(process.env.WELLINGTON_TELEPHONE, `${server.developer.name} aqui é o GORPO,  fica esperto que os servidor ${server.name} caiu!, SE FOI VOCÊ QUE DESLIGOU ANDA LOGO TA GASTANDO CREDITOS DO TOTAL VOICE RSRSR.`)
+             client.sms.enviar(process.env.WELLINGTON_TELEPHONE, `${server.developer.name} aqui é o GORPO,  fica esperto que os servidor ${server.name} caiu!`)
                 .then(function (data) {
                     console.log(data)
                 })
