@@ -30,6 +30,7 @@ const notifications = [
 setInterval(async function () {
     console.log("Iniciando monitoramento dos Servidores")
     for (const server of servers) {
+        i = 1 
         await axios({
             url: server.url,
             method: "get"
@@ -46,5 +47,6 @@ setInterval(async function () {
         })
     }
     console.log("Finalizando monitoramento dos Servidores")
-}, 1000 * 300) // 1 segundo
+    console.log(i+1)
+}, 1000*3600) // 1 segundo
 
